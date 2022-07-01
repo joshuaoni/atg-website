@@ -1,0 +1,106 @@
+nav {
+    height: 72px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 60px 0 71.99px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background: white;
+    border-bottom: solid 1px rgba(0,0,0,0.3);
+}
+
+nav .atg span {
+    color:  #27A365;
+}
+
+nav .atg img {
+    height: 19px;
+    width: 19px;
+}
+
+.blue {
+    color: #2F6CE5;
+}
+
+nav ::-webkit-input-placeholder {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+}
+
+.strong {
+    font-weight: 500;
+    display: flex;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+}
+
+.strong:hover {
+    background: rgb(238, 251, 255);
+    border: solid 1px rgba(0,0,0,0.3);
+}
+
+.atg {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav input {
+    height: 42px;
+    width: 85%;
+    border-radius: 21px;
+    background: rgb(238, 238, 238);
+    border: none;
+    padding: 0 30px;
+}
+
+.create {
+    padding-right: 3px;
+}
+
+.sea {
+    height: 16px;
+    width: 16px;
+    margin-right: -1.8rem;
+    z-index: 1;
+    margin-top: 0.9rem;
+}
+
+nav .w-50 {
+    width: 40% !important;
+    margin-left: 15%;
+}
+
+.down {
+    padding-left: 5px;
+}
+
+.icons {
+    display: none;
+}
+
+@media screen and (max-width: 54.4em) {
+    nav .desktop {
+        display: none !important;
+    }
+
+    nav {
+        height: 45px;
+        justify-content: flex-end;
+        padding: 0 1%;
+    }
+
+    nav img {
+        height: 18px;
+        width: 18px;
+        margin: 0 9px;
+    }
+
+    .icons {
+        display: block;
+    }
+}

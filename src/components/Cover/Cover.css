@@ -1,0 +1,65 @@
+.cover {
+    height: 440px;
+    width: 100%;
+    background: url(../../assets/cover-bg.png) no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.tint {
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: multiply;
+}
+
+.cover .text {
+    position: absolute;
+    top: 350px;
+    left: 13.88%;
+}
+
+.cover-top {
+    padding: 1rem 1rem 0 1rem
+}
+
+.cover-join {
+    padding: 2px 12px;
+    border: 2px solid white;
+    color: white;
+    background: rgba(0,0,0,0);
+    border-radius: 5px;
+    width: 7.5rem;
+}
+
+@media screen and (max-width: 54.4em) {
+    .cover .text {
+        left: 5%;
+        top: 300px
+    }
+
+    .cover {
+        height: 360px;
+        background: url(../../assets/cover-bg-sm.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    .tint {
+        background-color: rgba(0,0,0,0.6);
+        background-blend-mode: multiply;
+    }
+
+    .cover-top {
+        display: flex !important;
+    }
+
+    .cover-top img {
+        cursor: pointer;
+    }
+
+    .text h2 {
+        font-size: 120%;
+    }
+
+    .text p {
+        font-size: 85%;
+    }
+}

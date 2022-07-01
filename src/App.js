@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Cover from './components/Cover/Cover';
+import Navbar from './components/Navbar';
+import Posts from './components/Posts/Posts';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App () {
+	const remove = () => {
+        var popup = document.getElementById("myPopup");
+        popup.classList.remove("show");
+        var card = document.querySelector('.hidden');
+        card.classList.remove('wrap');
+		var wrapper = document.querySelector('.wrapper');
+		wrapper.classList.add('none');
+    }
+
+	return (
+		<div className='App container-fluid'>
+			<div className='wrapper none'>
+				<div onClick={remove} className='hidden'></div>
+			</div>
+			<Navbar/>
+			<Cover/>
+			<Posts/>
+		</div>
+	);
 }
 
 export default App;
